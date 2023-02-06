@@ -1,0 +1,28 @@
+.statistics {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 15px;
+}
+
+.title {
+  padding: 25px 75px;
+  color: #626568;
+}
+
+.stat-list {
+  display: flex;
+}
+
+.item {
+  flex-basis: calc(100% / 4);
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 24px;
+}

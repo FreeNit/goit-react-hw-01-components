@@ -2,8 +2,6 @@ import PropType from 'prop-types';
 
 import css from 'components/Profile/Profile.module.css';
 
-console.log(css);
-
 export default function Profile(userData) {
   const { userName, tag, location, avatar, stats } = userData;
   return (
