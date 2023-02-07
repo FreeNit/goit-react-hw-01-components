@@ -25,7 +25,7 @@ export const App = () => {
         alignContent: 'space-around',
         alignItems: 'center',
         justifyItems: 'center',
-        gridGap: 150,
+        gridGap: 100,
         fontSize: 40,
         color: '#010101',
       }}

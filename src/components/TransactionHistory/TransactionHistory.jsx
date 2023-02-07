@@ -1,29 +1,49 @@
 import PropType from 'prop-types';
 
+import { Table } from './TransactionHistory.styled';
+import { TableHeadRow } from './TransactionHistory.styled';
+import { TableHead } from './TransactionHistory.styled';
+import { TableData } from './TransactionHistory.styled';
+import { TableFirstData } from './TransactionHistory.styled';
+import { TableBodyRow } from './TransactionHistory.styled';
+
 export default function TransactionHistory({ transactions }) {
-  console.log(transactions);
   return (
-    <table className="transaction-history">
+    <Table className="transaction-history">
       <thead>
-        <tr>
-          <th>Type</th>
-          <th>Amount</th>
-          <th>Currency</th>
-        </tr>
+        <TableHeadRow>
+          <TableHead>Type</TableHead>
+          <TableHead>Amount</TableHead>
+          <TableHead>Currency</TableHead>
+        </TableHeadRow>
       </thead>
 
       <tbody>
-        {transactions.map(transaction => {
+        {transactions.map((transaction, index) => {
           const { id, type, amount, currency } = transaction;
           return (
-            <tr key={id}>
-              <td>{type}</td>
-              <td>{amount}</td>
-              <td>{currency}</td>
-            </tr>
+            <TableBodyRow key={id} itemIndex={index}>
+              <TableFirstData>{type}</TableFirstData>
+              <TableData>{amount}</TableData>
+              <TableData>{currency}</TableData>
+            </TableBodyRow>
           );
         })}
       </tbody>
-    </table>
+    </Table>
   );
 }
+
+TransactionHistory.propTypes = {
+  transactions: PropType.arrayOf(
+    PropType.shape({
+      id: PropType.oneOfType([
+        PropType.string.isRequired,
+        PropType.number.isRequired,
+      ]),
+      type: PropType.string.isRequired,
+      amount: PropType.string.isRequired,
+      currency: PropType.string.isRequired,
+    })
+  ),
+};
