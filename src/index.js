@@ -6,9 +6,10 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
   colors: {
-    black: 'black',
-    white: 'white',
-    accent: 'tomato',
+    mainText: '#122236',
+    secondText: '#A1ABB6',
+    bgColorFirst: '#ffffff',
+    bgColorSecond: '#F3F6F9',
   },
 };
 

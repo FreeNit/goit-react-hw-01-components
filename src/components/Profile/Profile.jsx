@@ -1,5 +1,11 @@
 import PropTypes from 'prop-types';
-import { SectionProfile, UserCard, UserInfo, UserImg } from './Profile.styled';
+import {
+  SectionProfile,
+  UserCard,
+  UserInfo,
+  UserStatistics,
+  StatisticsItem,
+} from './Profile.styled';
 
 export const Profile = ({
   userData: { username, tag, location, avatar, stats },
@@ -8,25 +14,25 @@ export const Profile = ({
     <SectionProfile>
       <UserCard>
         <UserInfo>
-          <UserImg className="UserImg" src={avatar} />
-          <p className="UserName">{username}</p>
-          <p className="UserTag">@{tag}</p>
-          <p className="UserLocation">{location}</p>
+          <img className="user-img" src={avatar} />
+          <p className="user-name">{username}</p>
+          <p className="user-tag">@{tag}</p>
+          <p className="user-location">{location}</p>
         </UserInfo>
-        <div className="UserStatistics">
-          <p className="UserFollowers">
-            <span>Followers</span>
-            <span>{stats.followers}</span>
-          </p>
-          <p className="UserViews">
-            <span>Views</span>
-            <span> {stats.views}</span>
-          </p>
-          <p className="UserLikes">
-            <span>Likes</span>
-            <span>{stats.likes}</span>
-          </p>
-        </div>
+        <UserStatistics>
+          <StatisticsItem>
+            <span className="stat-title">Followers</span>
+            <span className="stat-value">{stats.followers}</span>
+          </StatisticsItem>
+          <StatisticsItem>
+            <span className="stat-title">Views</span>
+            <span className="stat-value"> {stats.views}</span>
+          </StatisticsItem>
+          <StatisticsItem>
+            <span className="stat-title">Likes</span>
+            <span className="stat-value">{stats.likes}</span>
+          </StatisticsItem>
+        </UserStatistics>
       </UserCard>
     </SectionProfile>
   );
