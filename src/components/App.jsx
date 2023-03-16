@@ -1,16 +1,22 @@
+import { Profile } from './Profile/Profile';
+import userData from 'JSON/user.json';
+
 export const App = () => {
   return (
     <div
       style={{
         height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        width: '100vw',
+        display: 'inline-grid',
+        gridTemplateColumns: '1fr 1fr',
+        gridTemplateRows: '1fr 1fr',
+        gridGap: '20px',
       }}
     >
-      React homework template
+      <Profile userData={userData} />
+      <Profile userData={userData} />
+      <Profile userData={userData} />
+      <Profile userData={userData} />
     </div>
   );
 };
