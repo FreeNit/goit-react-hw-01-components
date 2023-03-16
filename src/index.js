@@ -10,6 +10,7 @@ const theme = {
     secondText: '#A1ABB6',
     bgColorFirst: '#ffffff',
     bgColorSecond: '#F3F6F9',
+    bgColorSection: '#E7ECF2',
   },
 };
 

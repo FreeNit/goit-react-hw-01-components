@@ -1,13 +1,5 @@
 import styled from 'styled-components';
 
-export const SectionProfile = styled.section`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-`;
-
 export const UserCard = styled.div`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 4px;

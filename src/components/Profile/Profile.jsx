@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+
+import { SectionWrapper } from 'components/common/Common.styled';
 import {
-  SectionProfile,
   UserCard,
   UserInfo,
   UserStatistics,
@@ -11,7 +12,7 @@ export const Profile = ({
   userData: { username, tag, location, avatar, stats },
 }) => {
   return (
-    <SectionProfile>
+    <SectionWrapper>
       <UserCard>
         <UserInfo>
           <img className="user-img" src={avatar} />
@@ -34,7 +35,7 @@ export const Profile = ({
           </StatisticsItem>
         </UserStatistics>
       </UserCard>
-    </SectionProfile>
+    </SectionWrapper>
   );
 };
 
