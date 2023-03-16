@@ -21,7 +21,7 @@ export const Profile = ({
     <SectionWrapper>
       <UserCard>
         <UserInfo>
-          <img className="user-img" src={avatar} />
+          <img className="user-img" src={avatar} alt="User avatar" />
           <p className="user-name">{username}</p>
           <p className="user-tag">@{tag}</p>
           <p className="user-location">{location}</p>
