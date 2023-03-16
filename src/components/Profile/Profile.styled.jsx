@@ -19,9 +19,12 @@ export const UserInfo = styled.div`
 `;
 
 export const UserImg = styled.img`
+  display: inline-block;
   height: 100px;
   width: 100px;
   border-radius: 1000px;
+  outline: 1px solid tomato;
   overflow: hidden;
   padding: 30px 60px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
