@@ -10,6 +10,8 @@ export const SectionProfile = styled.section`
 export const UserCard = styled.div`
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 4px;
+  width: 60%;
+  height: 80%;
 `;
 
 export const UserInfo = styled.div`
@@ -20,11 +22,9 @@ export const UserInfo = styled.div`
 
 export const UserImg = styled.img`
   display: inline-block;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   border-radius: 1000px;
-  outline: 1px solid tomato;
-  overflow: hidden;
-  padding: 30px 60px;
+  margin: 30px 60px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 `;
