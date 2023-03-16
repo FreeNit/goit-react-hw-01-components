@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const StatisticWrapper = styled.div`
   background-color: ${props => props.theme.colors.bgColorFirst};
+  border-radius: 4px;
+  overflow: hidden;
 `;
 
 export const StatisticTitle = styled.h2`
