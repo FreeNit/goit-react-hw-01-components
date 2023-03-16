@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 
 import { SectionWrapper } from 'components/common/Common.styled';
+import { TransactionsTable } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ transactions }) => {
   return (
     <SectionWrapper>
-      <table className="transaction-history">
+      <TransactionsTable>
         <thead>
           <tr>
             <th>Type</th>
@@ -18,14 +19,14 @@ export const TransactionHistory = ({ transactions }) => {
           {transactions.map(({ id, type, amount, currency }) => {
             return (
               <tr key={id}>
-                <td>{type}</td>
+                <td style={{ textTransform: 'capitalize' }}>{type}</td>
                 <td>{amount}</td>
                 <td>{currency}</td>
               </tr>
             );
           })}
         </tbody>
-      </table>
+      </TransactionsTable>
     </SectionWrapper>
   );
 };
