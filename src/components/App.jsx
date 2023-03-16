@@ -1,10 +1,12 @@
 import userData from 'JSON/user.json';
 import statisticsData from 'JSON/data.json';
 import friendList from 'JSON/friends.json';
+import transactions from 'JSON/transactions.json';
 
 import { Profile } from './Profile/Profile';
 import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
+import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 
 export const App = () => {
   return (
@@ -15,12 +17,12 @@ export const App = () => {
         display: 'inline-grid',
         gridTemplateColumns: '1fr 1fr',
         gridTemplateRows: '1fr 1fr',
-        gridGap: '20px',
       }}
     >
       <Profile userData={userData} />
       <Statistics statistics={statisticsData} />
       <FriendList friendList={friendList} />
+      <TransactionHistory transactions={transactions} />
     </div>
   );
 };
