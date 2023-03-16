@@ -4,6 +4,7 @@ export const StatisticWrapper = styled.div`
   background-color: ${props => props.theme.colors.bgColorFirst};
   border-radius: 4px;
   overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export const StatisticTitle = styled.h2`

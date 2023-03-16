@@ -1,4 +1,7 @@
+import PropTypes from 'prop-types';
+
 import { SectionWrapper } from 'components/common/Common.styled';
+
 import {
   StatisticWrapper,
   StatisticsList,
@@ -29,4 +32,12 @@ export const Statistics = ({ statistics }) => {
       </StatisticWrapper>
     </SectionWrapper>
   );
+};
+
+Statistics.prototype = {
+  statistics: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    label: PropTypes.string.isRequired,
+    percentage: PropTypes.number.isRequired,
+  }).isRequired,
 };

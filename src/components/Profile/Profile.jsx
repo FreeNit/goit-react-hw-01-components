@@ -9,7 +9,13 @@ import {
 } from './Profile.styled';
 
 export const Profile = ({
-  userData: { username, tag, location, avatar, stats },
+  userData: {
+    username = 'Unknown',
+    tag,
+    location,
+    avatar = 'https://www.bangkokfightlab.com/wp-content/uploads/2017/05/noavatar.png',
+    stats,
+  },
 }) => {
   return (
     <SectionWrapper>

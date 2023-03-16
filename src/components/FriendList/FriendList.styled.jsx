@@ -5,6 +5,10 @@ export const Friends = styled.ul`
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: ${props => props.theme.colors.bgColorFirst};
+  padding: 30px;
+  border-radius: 4px;
 `;
 
 export const FriendItem = styled.li`
@@ -13,6 +17,7 @@ export const FriendItem = styled.li`
   align-items: center;
   column-gap: 20px;
   background-color: ${props => props.theme.colors.bgColorFirst};
+  border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px 100px 10px 20px;
 

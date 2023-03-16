@@ -6,6 +6,7 @@ export const TransactionsTable = styled.table`
   margin: 10px auto;
   background-color: ${props => props.theme.colors.bgColorFirst};
   text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   th,
   td {
