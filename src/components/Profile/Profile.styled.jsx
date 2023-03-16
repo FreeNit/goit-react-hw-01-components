@@ -25,7 +25,7 @@ export const UserInfo = styled.div`
     height: 150px;
     width: 150px;
     border-radius: 1000px;
-    margin: 30px 60px;
+    margin: 40px 60px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
